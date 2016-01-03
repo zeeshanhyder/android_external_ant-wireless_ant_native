@@ -40,6 +40,10 @@ else ifeq ($(BOARD_ANT_WIRELESS_DEVICE),"vfs-prerelease")
 
 ANT_DIR := src/vfs
 
+else ifeq ($(BOARD_ANT_WIRELESS_DEVICE),"qualcomm-smd")
+
+ANT_DIR := src/vfs
+
 else
 
 $(error Unsupported BOARD_ANT_WIRELESS_DEVICE := $(BOARD_ANT_WIRELESS_DEVICE))
